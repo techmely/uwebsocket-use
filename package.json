@@ -1,0 +1,70 @@
+{
+  "name": "uwebsockets-use",
+  "version": "1.0.0",
+  "description": "The UWebSocketsJs Utils for every projects",
+  "author": "Harry Tran <nhattq.coding@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/techmely/uwebsocket-use",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist",
+    "tag": "latest"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "node .husky/install.mjs",
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "upgrade.deps": "npm-check-updates -u",
+    "type-check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "uWebSockets.js": "*"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.6.1",
+    "@techmely/types": "1.6.4",
+    "@types/node": "20.11.28",
+    "husky": "9.0.11",
+    "tslib": "2.6.2",
+    "tsup": "8.0.2",
+    "typescript": "5.4.2",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+  },
+  "funding": [
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/harrytran998"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/harrytran998"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/techmely/techmely/issues"
+  },
+  "keywords": [
+    "techmely",
+    "uwebsockets"
+  ],
+  "packageManager": "yarn@4.1.1"
+}
