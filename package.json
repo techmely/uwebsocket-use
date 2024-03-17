@@ -36,18 +36,21 @@
     "upgrade.deps": "npm-check-updates -u",
     "type-check": "tsc --noEmit"
   },
+  "dependencies": {
+    "@techmely/utils": "2.1.14"
+  },
   "peerDependencies": {
     "uWebSockets.js": "*"
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.1",
-    "@techmely/types": "1.6.4",
+    "@techmely/types": "1.6.5",
     "@types/node": "20.11.28",
     "husky": "9.0.11",
     "tslib": "2.6.2",
     "tsup": "8.0.2",
     "typescript": "5.4.2",
-    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+    "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js.git#commit=1977b5039938ad863d42fc4958d48c17e5a1fa06"
   },
   "funding": [
     {

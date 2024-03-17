@@ -27,7 +27,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@biomejs/biome", "npm:1.6.1"],\
-          ["@techmely/types", "npm:1.6.4"],\
+          ["@techmely/types", "npm:1.6.5"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14"],\
           ["@types/node", "npm:20.11.28"],\
           ["husky", "npm:9.0.11"],\
           ["tslib", "npm:2.6.2"],\
@@ -590,10 +591,33 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@techmely/types", [\
-      ["npm:1.6.4", {\
-        "packageLocation": "./.yarn/cache/@techmely-types-npm-1.6.4-5b16e45138-842359fa0b.zip/node_modules/@techmely/types/",\
+      ["npm:1.6.5", {\
+        "packageLocation": "./.yarn/cache/@techmely-types-npm-1.6.5-99a9fd50a5-2fe03574e8.zip/node_modules/@techmely/types/",\
         "packageDependencies": [\
-          ["@techmely/types", "npm:1.6.4"]\
+          ["@techmely/types", "npm:1.6.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@techmely/utils", [\
+      ["npm:2.1.14", {\
+        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-23ee0cbbd2/node_modules/@techmely/utils/",\
+        "packageDependencies": [\
+          ["@techmely/utils", "npm:2.1.14"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14", {\
+        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-23ee0cbbd2/node_modules/@techmely/utils/",\
+        "packageDependencies": [\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14"],\
+          ["@types/dayjs", null],\
+          ["dayjs", null],\
+          ["nanoid", "npm:5.0.6"]\
+        ],\
+        "packagePeers": [\
+          "@types/dayjs",\
+          "dayjs"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1596,6 +1620,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["nanoid", [\
+      ["npm:5.0.6", {\
+        "packageLocation": "./.yarn/cache/nanoid-npm-5.0.6-f7d67816e3-6660f99b7b.zip/node_modules/nanoid/",\
+        "packageDependencies": [\
+          ["nanoid", "npm:5.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["negotiator", [\
       ["npm:0.6.3", {\
         "packageLocation": "./.yarn/cache/negotiator-npm-0.6.3-9d50e36171-3ec9fd413e.zip/node_modules/negotiator/",\
@@ -2238,7 +2271,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["uwebsockets-use", "workspace:."],\
           ["@biomejs/biome", "npm:1.6.1"],\
-          ["@techmely/types", "npm:1.6.4"],\
+          ["@techmely/types", "npm:1.6.5"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14"],\
           ["@types/node", "npm:20.11.28"],\
           ["husky", "npm:9.0.11"],\
           ["tslib", "npm:2.6.2"],\
