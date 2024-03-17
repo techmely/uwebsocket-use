@@ -15,7 +15,6 @@ Common middleware
 - [ ] Timing(Latency)
 - [ ] Pretty JSON
 - [ ] Logger
-- [ ] Redirect
 - [ ] Og Image
 - [ ] Feature Flags
 - [ ] Cookie
@@ -31,12 +30,12 @@ Specific middleware we used
 
 ### Request
 
-- [ ] assertMethod(req, expected. allowHead?)
-- [ ] getRequestIp(req)
-- [ ] getRequestHost(req, opts: { xForwardedHost? })
-- [ ] getRequestProtocol(req, opts: { xForwardedProto? })
+- [x] assertMethod(req, expected. allowHead?)
+- [x] getRequestIp(req)
+- [x] getRequestHost(req, opts: { xForwardedHost? })
+- [x] getRequestProtocol(req, opts: { xForwardedProto? })
 - [ ] getValidateQuery(req, validateFn)
-- [ ] isMethod(req, expected, allowHead?)
+- [x] isMethod(req, expected, allowHead?)
 
 ### Response
 
@@ -45,7 +44,7 @@ Specific middleware we used
 - [ ] readFomData(res)
 - [ ] readMultipartFormData(res)
 - [ ] readValidatedBody
-- [ ] appendHeaders(res, headers)
+- [x] appendHeaders(res, headers)
 - [ ] isStream(data) [Checks if the data is a stream. (Node.js Readable Stream, WebStream or React Pipeable Stream)]
 - [ ] sendRedirect(res, location, code?)
 - [ ] sendStream(res, stream)
