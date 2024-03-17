@@ -46,17 +46,17 @@ Specific middleware we used
 - [ ] readMultipartFormData(res)
 - [ ] readValidatedBody
 - [ ] appendHeaders(res, headers)
-- [ ] isStream(data) [Checks if the data is a stream. (Node.js Readable Stream, WebStream or React Pipeable Stream)
+- [ ] isStream(data) [Checks if the data is a stream. (Node.js Readable Stream, WebStream or React Pipeable Stream)]
 - [ ] sendRedirect(res, location, code?)
 - [ ] sendStream(res, stream)
 - [ ] writeEarlyHints(res, hints, callback)
+- [ ] handleCacheHeaders(res, opts)
 
 ### Cookie Utils
-- [ ] deleteCookie(res, name, serializeOptions?)
-- [ ] getCookie(req, name)
+- [x] deleteCookie(res, name, serializeOptions?)
+- [x] getCookie(req, name)
+- [x] setCookie(res)
 - [ ] parseCookies(req)
-- [ ] setCookie(res)
-- [ ] handleCacheHeaders(res, opts)
 
 ### Cors
 - [ ] appendCorsHeaders(res, options)

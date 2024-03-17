@@ -1,6 +1,6 @@
-import { lookupMineType } from "@techmely/utils";
 import { type Stats, createReadStream, lstatSync } from "node:fs";
 import path from "node:path";
+import { lookupMineType } from "@techmely/utils";
 import type { HttpRequest, HttpResponse } from "uWebSockets.js";
 
 export const serverStatic = (dir: string) => (res: HttpResponse, req: HttpRequest) => {
@@ -97,10 +97,9 @@ function streamFile(res: HttpResponse, { filePath, size }: FileStats) {
   readStream.on("data", onDataChunk).on("error", onError).on("end", destroyReadStream);
 }
 
-
 type FileStats = {
-  filePath: string
-  lastModified: string
-  size: number
-  contentType : string
-}
+  filePath: string;
+  lastModified: string;
+  size: number;
+  contentType: string;
+};

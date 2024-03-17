@@ -27,8 +27,9 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@biomejs/biome", "npm:1.6.1"],\
+          ["@techmely/http", "npm:1.1.1"],\
           ["@techmely/types", "npm:1.6.5"],\
-          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17"],\
           ["@types/node", "npm:20.11.28"],\
           ["husky", "npm:9.0.11"],\
           ["tslib", "npm:2.6.2"],\
@@ -590,6 +591,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@techmely/http", [\
+      ["npm:1.1.1", {\
+        "packageLocation": "./.yarn/cache/@techmely-http-npm-1.1.1-eca8907241-d14bdb20e7.zip/node_modules/@techmely/http/",\
+        "packageDependencies": [\
+          ["@techmely/http", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@techmely/types", [\
       ["npm:1.6.5", {\
         "packageLocation": "./.yarn/cache/@techmely-types-npm-1.6.5-99a9fd50a5-2fe03574e8.zip/node_modules/@techmely/types/",\
@@ -600,17 +610,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@techmely/utils", [\
-      ["npm:2.1.14", {\
-        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-23ee0cbbd2/node_modules/@techmely/utils/",\
+      ["npm:2.1.17", {\
+        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-976301a8c4/node_modules/@techmely/utils/",\
         "packageDependencies": [\
-          ["@techmely/utils", "npm:2.1.14"]\
+          ["@techmely/utils", "npm:2.1.17"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14", {\
-        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-23ee0cbbd2/node_modules/@techmely/utils/",\
+      ["virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17", {\
+        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-976301a8c4/node_modules/@techmely/utils/",\
         "packageDependencies": [\
-          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17"],\
           ["@types/dayjs", null],\
           ["dayjs", null],\
           ["nanoid", "npm:5.0.6"]\
@@ -2271,8 +2281,9 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["uwebsockets-use", "workspace:."],\
           ["@biomejs/biome", "npm:1.6.1"],\
+          ["@techmely/http", "npm:1.1.1"],\
           ["@techmely/types", "npm:1.6.5"],\
-          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.14"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17"],\
           ["@types/node", "npm:20.11.28"],\
           ["husky", "npm:9.0.11"],\
           ["tslib", "npm:2.6.2"],\

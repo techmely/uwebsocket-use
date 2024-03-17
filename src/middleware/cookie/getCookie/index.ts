@@ -10,6 +10,5 @@ import type { HttpRequest } from "uWebSockets.js";
  * ```
  */
 export function getCookie(req: HttpRequest): Record<string, string> {
-  return parseCookie(req.getHeader('cookie') || "");
+  return parseCookie(req.getHeader("cookie") || "");
 }
-

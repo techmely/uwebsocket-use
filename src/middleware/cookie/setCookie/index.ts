@@ -1,4 +1,4 @@
-import { serializeCookie, type CookieSerializeOptions } from "@techmely/utils";
+import { type CookieSerializeOptions, serializeCookie } from "@techmely/utils";
 import type { HttpResponse } from "uWebSockets.js";
 
 /**
@@ -21,4 +21,3 @@ export function setCookie(
   const cookieStr = serializeCookie(name, value, serializeOptions);
   res.writeHeader("set-cookie", cookieStr);
 }
-

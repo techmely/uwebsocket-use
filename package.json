@@ -33,11 +33,13 @@
     "prepare": "node .husky/install.mjs",
     "build": "tsup",
     "clean": "rimraf dist",
+    "lint": "biome check . --apply",
     "upgrade.deps": "npm-check-updates -u",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@techmely/utils": "2.1.14"
+    "@techmely/http": "1.1.1",
+    "@techmely/utils": "2.1.17"
   },
   "peerDependencies": {
     "uWebSockets.js": "*"

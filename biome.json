@@ -47,11 +47,6 @@
     }
   },
   "files": {
-    "ignore": [
-      "node_modules",
-      "coverage",
-      ".output",
-      "dist"
-    ]
+    "ignore": ["node_modules", "coverage", ".output", "dist", ".pnp*"]
   }
 }

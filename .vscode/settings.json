@@ -1,8 +1,5 @@
 {
-  "cSpell.words": [
-    "biomejs",
-    "uwebsockets"
-  ],
+  "cSpell.words": ["biomejs", "uwebsockets"],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
