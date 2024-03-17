@@ -1,3 +1,4 @@
+import { lookupMineType } from "@techmely/utils";
 import { type Stats, createReadStream, lstatSync } from "node:fs";
 import path from "node:path";
 import type { HttpRequest, HttpResponse } from "uWebSockets.js";
@@ -41,14 +42,14 @@ export const serverStatic = (dir: string) => (res: HttpResponse, req: HttpReques
   }
 };
 
-function getFileStats(filePath: string) {
+function getFileStats(filePath: string): FileStats | undefined {
   const stats: Stats | undefined = lstatSync(filePath, { throwIfNoEntry: false });
 
   if (!stats || stats.isDirectory()) {
     return;
   }
   const fileExtension = path.extname(filePath);
-  const contentType = mime.lookup(fileExtension) || "application/octet-stream";
+  const contentType = lookupMineType(fileExtension) || "application/octet-stream";
   const { mtime, size } = stats;
   const lastModified = mtime.toUTCString();
 
@@ -60,7 +61,7 @@ const toArrayBuffer = (buffer: Buffer) => {
   return arrayBuffer.slice(byteOffset, byteOffset + byteLength);
 };
 
-function streamFile(res: HttpResponse, { filePath, size }: ReturnType<typeof getFileStats>) {
+function streamFile(res: HttpResponse, { filePath, size }: FileStats) {
   const readStream = createReadStream(filePath);
   const destroyReadStream = () => !readStream.destroyed && readStream.destroy();
 
@@ -94,4 +95,12 @@ function streamFile(res: HttpResponse, { filePath, size }: ReturnType<typeof get
 
   res.onAborted(destroyReadStream);
   readStream.on("data", onDataChunk).on("error", onError).on("end", destroyReadStream);
+}
+
+
+type FileStats = {
+  filePath: string
+  lastModified: string
+  size: number
+  contentType : string
 }
