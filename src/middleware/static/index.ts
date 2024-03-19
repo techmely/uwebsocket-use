@@ -2,6 +2,7 @@ import { type Stats, createReadStream, lstatSync } from "node:fs";
 import path from "node:path";
 import { lookupMineType } from "@techmely/utils";
 import type { HttpRequest, HttpResponse } from "uWebSockets.js";
+import { appendHeaders } from "../../response/appendHeaders";
 
 export const serverStatic = (dir: string) => (res: HttpResponse, req: HttpRequest) => {
   try {
@@ -31,9 +32,10 @@ export const serverStatic = (dir: string) => (res: HttpResponse, req: HttpReques
       res.end();
       return;
     }
-
-    res.writeHeader("Content-Type", contentType);
-    res.writeHeader("Last-Modified", lastModified);
+    appendHeaders(res, [
+      ["Content-Type", contentType],
+      ["Last-Modified", lastModified],
+    ]);
 
     streamFile(res, fileStats);
   } catch (error) {

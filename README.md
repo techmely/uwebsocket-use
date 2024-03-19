@@ -5,7 +5,7 @@ Here is the todo list I want to compose
 ## Middleware
 
 Common middleware
-- [ ] Serve static
+- [x] Serve static
 - [ ] CORS
 - [ ] Compress
 - [ ] Etag
