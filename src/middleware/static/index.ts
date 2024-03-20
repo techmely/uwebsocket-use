@@ -32,10 +32,7 @@ export const serverStatic = (dir: string) => (res: HttpResponse, req: HttpReques
       res.end();
       return;
     }
-    appendHeaders(res, [
-      ["Content-Type", contentType],
-      ["Last-Modified", lastModified],
-    ]);
+    appendHeaders(res, { "Content-Type": contentType, "Last-Modified": lastModified });
 
     streamFile(res, fileStats);
   } catch (error) {

@@ -6,7 +6,7 @@ Here is the todo list I want to compose
 
 Common middleware
 - [x] Serve static
-- [ ] CORS
+- [x] CORS
 - [ ] Compress
 - [ ] Etag
 - [ ] Cache
@@ -48,6 +48,7 @@ Specific middleware we used
 - [ ] isStream(data) [Checks if the data is a stream. (Node.js Readable Stream, WebStream or React Pipeable Stream)]
 - [ ] sendRedirect(res, location, code?)
 - [ ] sendStream(res, stream)
+- [ ] sendNoContent(res, code?)
 - [ ] writeEarlyHints(res, hints, callback)
 - [ ] handleCacheHeaders(res, opts)
 
