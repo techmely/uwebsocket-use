@@ -5,6 +5,7 @@ Here is the todo list I want to compose
 ## Middleware
 
 Common middleware
+
 - [x] Serve static
 - [x] CORS
 - [ ] Compress
@@ -45,25 +46,27 @@ Specific middleware we used
 - [ ] readMultipartFormData(res)
 - [ ] readValidatedBody
 - [x] appendHeaders(res, headers)
-- [ ] isStream(data) [Checks if the data is a stream. (Node.js Readable Stream, WebStream or React Pipeable Stream)]
-- [ ] sendRedirect(res, location, code?)
+- [x] isStream(data) [Checks if the data is a stream. (Node.js Readable Stream, WebStream or React Pipeable Stream)]
+- [x] sendRedirect(res, location, code?)
 - [ ] sendStream(res, stream)
 - [ ] sendNoContent(res, code?)
 - [ ] writeEarlyHints(res, hints, callback)
 - [ ] handleCacheHeaders(res, opts)
 
 ### Cookie Utils
+
 - [x] deleteCookie(res, name, serializeOptions?)
 - [x] getCookie(req, name)
 - [x] setCookie(res)
 - [ ] parseCookies(req)
 
 ### Cors
-- [ ] appendCorsHeaders(res, options)
-- [ ] appendCorsPrelightHeaders(res, options)
+
+- [x] appendCorsHeaders(res, options)
+- [x] appendCorsPrelightHeaders(res, options)
 - [ ] handleCors(res, options)
 
 ### Proxy
+
 - [ ] proxyRequest(res, req, opts)
 - [ ] sendProxy(res, target, opts)
-   

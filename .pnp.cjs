@@ -29,7 +29,7 @@ const RAW_RUNTIME_STATE =
           ["@biomejs/biome", "npm:1.6.1"],\
           ["@techmely/http", "npm:1.1.1"],\
           ["@techmely/types", "npm:1.6.5"],\
-          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.18"],\
           ["@types/node", "npm:20.11.28"],\
           ["husky", "npm:9.0.11"],\
           ["tslib", "npm:2.6.2"],\
@@ -610,17 +610,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@techmely/utils", [\
-      ["npm:2.1.17", {\
-        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-976301a8c4/node_modules/@techmely/utils/",\
+      ["npm:2.1.18", {\
+        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-f44d62b75f/node_modules/@techmely/utils/",\
         "packageDependencies": [\
-          ["@techmely/utils", "npm:2.1.17"]\
+          ["@techmely/utils", "npm:2.1.18"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17", {\
-        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-976301a8c4/node_modules/@techmely/utils/",\
+      ["virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.18", {\
+        "packageLocation": "./.yarn/unplugged/@techmely-utils-virtual-f44d62b75f/node_modules/@techmely/utils/",\
         "packageDependencies": [\
-          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.18"],\
           ["@types/dayjs", null],\
           ["dayjs", null],\
           ["nanoid", "npm:5.0.6"]\
@@ -2283,7 +2283,7 @@ const RAW_RUNTIME_STATE =
           ["@biomejs/biome", "npm:1.6.1"],\
           ["@techmely/http", "npm:1.1.1"],\
           ["@techmely/types", "npm:1.6.5"],\
-          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.17"],\
+          ["@techmely/utils", "virtual:d4cd35d58dee4d866c354868e9724a0dd2520c578c62366eb5a61ea66dbd6b9cea70629b798c9f12f1cf0a61acd886f95a9d85055beb977ae33cba20ef8a5e2c#npm:2.1.18"],\
           ["@types/node", "npm:20.11.28"],\
           ["husky", "npm:9.0.11"],\
           ["tslib", "npm:2.6.2"],\

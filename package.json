@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@techmely/http": "1.1.1",
-    "@techmely/utils": "2.1.17"
+    "@techmely/utils": "2.1.18"
   },
   "peerDependencies": {
     "uWebSockets.js": "*"
