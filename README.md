@@ -40,18 +40,18 @@ Specific middleware we used
 
 ### Response
 
-- [ ] readRawBody(res, encoding)
-- [ ] readBody(res)
+- [x] readRawBody(res, encoding)
+- [x] readBody(res)
 - [ ] readFomData(res)
 - [ ] readMultipartFormData(res)
-- [ ] readValidatedBody
+- [x] readValidatedBody
 - [x] appendHeaders(res, headers)
 - [x] isStream(data) [Checks if the data is a stream. (Node.js Readable Stream, WebStream or React Pipeable Stream)]
 - [x] sendRedirect(res, location, code?)
 - [ ] sendStream(res, stream)
 - [ ] sendNoContent(res, code?)
 - [ ] writeEarlyHints(res, hints, callback)
-- [ ] handleCacheHeaders(res, opts)
+- [x] handleCacheHeaders(res, opts)
 
 ### Cookie Utils
 
