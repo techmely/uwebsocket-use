@@ -8,11 +8,7 @@ import type { HttpResponse } from "uWebSockets.js";
  *
  * In the body, it sends a simple HTML page with a meta refresh tag to redirect the client in case the headers are ignored.
  */
-export function sendRedirect(
-  res: HttpResponse,
-  location: string,
-  code = HTTP_TEMPORARY_REDIRECT,
-) {
+export function sendRedirect(res: HttpResponse, location: string, code = HTTP_TEMPORARY_REDIRECT) {
   res.writeStatus(String(code));
   res.setHeader("location", location);
   res.writeHeader("content-type", "text/html");

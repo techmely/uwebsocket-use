@@ -1,14 +1,11 @@
-import { ReadableStream } from "node:stream";
+import type { ReadableStream } from "node:stream";
 
 /**
  * Send a stream response to the client.
  *
  * Note: You can directly `return` a stream value inside event handlers alternatively which is recommended.
  */
-export function sendStream(
-  res: HttpResponse,
-  stream: Readable | ReadableStream,
-) {
+export function sendStream(res: HttpResponse, stream: Readable | ReadableStream) {
   // Validate input
   if (!stream || typeof stream !== "object") {
     throw new Error("[uws] Invalid stream provided");

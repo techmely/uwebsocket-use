@@ -1,12 +1,8 @@
+import { ArgumentInvalidException } from "@techmely/http";
 import type { HttpResponse } from "uWebSockets.js";
 import { createError } from "../response";
-import { ArgumentInvalidException } from "@techmely/http";
 
-export async function validateData<T>(
-  res: HttpResponse,
-  data: unknown,
-  fn: any,
-) {
+export async function validateData<T>(res: HttpResponse, data: unknown, fn: any) {
   try {
     const res = await fn(data);
     return res;

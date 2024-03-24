@@ -32,7 +32,10 @@ export const serverStatic = (dir: string) => (res: HttpResponse, req: HttpReques
       res.end();
       return;
     }
-    appendHeaders(res, { "Content-Type": contentType, "Last-Modified": lastModified });
+    appendHeaders(res, {
+      "Content-Type": contentType,
+      "Last-Modified": lastModified,
+    });
 
     streamFile(res, fileStats);
   } catch (error) {
@@ -42,7 +45,9 @@ export const serverStatic = (dir: string) => (res: HttpResponse, req: HttpReques
 };
 
 function getFileStats(filePath: string): FileStats | undefined {
-  const stats: Stats | undefined = lstatSync(filePath, { throwIfNoEntry: false });
+  const stats: Stats | undefined = lstatSync(filePath, {
+    throwIfNoEntry: false,
+  });
 
   if (!stats || stats.isDirectory()) {
     return;

@@ -1,5 +1,5 @@
-import type { HttpRequest, HttpResponse } from "uWebSockets.js";
 import { HTTP_NOT_MODIFIED } from "@techmely/http";
+import type { HttpRequest, HttpResponse } from "uWebSockets.js";
 
 export interface CacheConditions {
   modifiedTime?: string | Date;

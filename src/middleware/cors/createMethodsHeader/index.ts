@@ -1,4 +1,4 @@
-import type { UwsCorsOptions, UwsAccessControlAllowMethodsHeader } from "../cors.types";
+import type { UwsAccessControlAllowMethodsHeader, UwsCorsOptions } from "../cors.types";
 
 /**
  * Create the `access-control-allow-methods` header.

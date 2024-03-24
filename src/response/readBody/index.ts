@@ -1,6 +1,6 @@
+import type { StringEnum } from "@techmely/types";
 import type { HttpRequest, HttpResponse } from "uWebSockets.js";
 import { readRawBody } from "../readRawBody";
-import type { StringEnum } from "@techmely/types";
 
 type ReadBodyOptions = {
   encoding: StringEnum<"utf8">;

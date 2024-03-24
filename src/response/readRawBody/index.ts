@@ -1,14 +1,9 @@
+import type { HttpMethod } from "@techmely/http";
 import type { HttpRequest, HttpResponse } from "uWebSockets.js";
 import { assertMethod } from "../../request";
-import type { HttpMethod } from "@techmely/http";
 
 type CallbackResponseBody = (data: Buffer) => void;
-const CONTAIN_PAYLOAD_METHODS: HttpMethod[] = [
-  "PATCH",
-  "POST",
-  "PUT",
-  "DELETE",
-];
+const CONTAIN_PAYLOAD_METHODS: HttpMethod[] = ["PATCH", "POST", "PUT", "DELETE"];
 
 /*
  * @descroption Read the raw body
@@ -25,7 +20,7 @@ export function readRawBody(
   let buffer: Buffer;
   /* Register data cb */
   res.onData((ab, isLast) => {
-    let chunk = Buffer.from(ab);
+    const chunk = Buffer.from(ab);
     if (isLast) {
       if (buffer) {
         const data = Buffer.concat([buffer, chunk]);

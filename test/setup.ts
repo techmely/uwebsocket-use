@@ -1,8 +1,4 @@
-import {
-  type TemplatedApp,
-  type us_listen_socket,
-  us_listen_socket_close,
-} from "uWebSockets.js";
+import { type TemplatedApp, type us_listen_socket, us_listen_socket_close } from "uWebSockets.js";
 import app from "./app.setup";
 
 const hostname = "127.0.0.1";

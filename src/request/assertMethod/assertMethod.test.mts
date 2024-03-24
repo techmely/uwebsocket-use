@@ -2,7 +2,7 @@ import { HTTP_METHOD_NOT_ALLOWED } from "@techmely/http";
 import supertest, { type SuperTest } from "supertest";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { assertMethod } from ".";
-import { createTestServer, type CreateTestServer } from "../../../test/setup";
+import { type CreateTestServer, createTestServer } from "../../../test/setup";
 
 describe("Assert method", () => {
   let testServer: CreateTestServer;

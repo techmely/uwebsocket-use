@@ -1,6 +1,6 @@
 import type { HttpRequest, HttpResponse } from "uWebSockets.js";
-import { readBody } from "../readBody";
 import { validateData } from "../../internal/validateData";
+import { readBody } from "../readBody";
 
 /**
  * Tries to read the request body via `readBody`, then uses the provided validation function and either throws a validation error or returns the result.
