@@ -25,12 +25,9 @@
     "directory": "dist",
     "tag": "latest"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "sideEffects": false,
   "scripts": {
-    "prepare": "node .husky/install.mjs",
     "build": "tsup",
     "clean": "rimraf dist",
     "lint": "biome check . --apply",
@@ -42,7 +39,7 @@
     "@techmely/utils": "2.1.18"
   },
   "peerDependencies": {
-    "uWebSockets.js": "*"
+    "uWebSockets.js": "uNetworking/uWebSockets.js#v20.43.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.1",
@@ -52,7 +49,7 @@
     "tslib": "2.6.2",
     "tsup": "8.0.2",
     "typescript": "5.4.2",
-    "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js.git#commit=1977b5039938ad863d42fc4958d48c17e5a1fa06"
+    "uWebSockets.js": "uNetworking/uWebSockets.js#v20.43.0"
   },
   "funding": [
     {
@@ -67,9 +64,5 @@
   "bugs": {
     "url": "https://github.com/techmely/techmely/issues"
   },
-  "keywords": [
-    "techmely",
-    "uwebsockets"
-  ],
-  "packageManager": "yarn@4.1.1"
+  "keywords": ["techmely", "uwebsockets"]
 }
